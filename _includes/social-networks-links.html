@@ -48,6 +48,15 @@
   </li>
 {%- endif -%}
 
+{% if site.share-links-active.google %}
+  <!--- Share on Google Plus -->
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
+      class="btn btn-social-icon btn-google" title="Share on Google+">
+      <span class="fa fa-fw fa-google-plus" aria-hidden="true"></span>
+      <span class="sr-only">Google+</span>
+    </a>
+{% endif %}
+  
 {%- if site.social-network-links.telegram -%}
   <li class="list-inline-item">
     <a href="https://t.me/{{ site.social-network-links.telegram }}" title="Telegram">
