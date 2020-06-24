@@ -50,12 +50,14 @@
 
 {% if site.share-links-active.google %}
   <!--- Share on Google Plus -->
+  <li class="list-inline-item">
     <a href="https://scholar.google.com/citations?user={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-google" title="Share on Google+">
-      <span class="fa fa-fw fa-google" aria-hidden="true"></span>
+      <span class="fa fa-circle fa-google" aria-hidden="true"></span>
       <span class="sr-only">Google+</span>
     </a>
-{% endif %}
+  </li>
+{%- endif -%}
   
 {%- if site.social-network-links.telegram -%}
   <li class="list-inline-item">
